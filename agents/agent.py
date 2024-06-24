@@ -13,4 +13,4 @@ def create_agent(name,description,instructions,tools,llm):
     ]).partial(name=name,description=description,
     instructions='\n'.join(instructions),operating_system=system(),user=getuser(),cwd=getcwd())
     agent=create_structured_chat_agent(llm,tools,prompt)
-    return AgentExecutor(name=name,agent=agent,tools=tools,verbose=True,handle_parsing_errors=True,max_iterations=4)
+    return AgentExecutor(name=name,agent=agent,tools=tools,verbose=True,handle_parsing_errors=True)

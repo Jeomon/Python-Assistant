@@ -1,0 +1,6 @@
+langgraph
+duckduckgo-search
+langchain_community
+langchain_core
+langchain
+bs4

@@ -60,7 +60,7 @@ def shell_tool(command, script_args,inputs) -> str:
         safe_command = shlex.split(command)
         if script_args:
             safe_command.extend(script_args)
-        result = subprocess.run(safe_command, capture_output=True, text=True,input=inputs,check=True)
+        result = subprocess.run(safe_command, capture_output=True, text=True,input=inputs)
         if result.returncode != 0:
             return f"Error: {result.stderr.strip()}"
         return result.stdout.strip()
