@@ -30,9 +30,7 @@ We welcome contributions to Python-Assistant! If you'd like to contribute.
 ## Reference
 
 [Future of Coding — Multi-Agent LLM Framework using LangGraph](https://medium.com/@anuragmishra_27746/future-of-coding-multi-agent-llm-framework-using-langgraph-092da9493663)\
-[Integrating LangGraph with Ollama for Advanced LLM Applications](https://medium.com/@lifanov.a.v/integrating-langgraph-with-ollama-for-advanced-llm-applications-d6c10262dafa)\
-[Langgraph](https://langchain-ai.github.io/langgraph/)\
-[Langchain](https://python.langchain.com/v0.2/docs/introduction/)
+[Integrating LangGraph with Ollama for Advanced LLM Applications](https://medium.com/@lifanov.a.v/integrating-langgraph-with-ollama-for-advanced-llm-applications-d6c10262dafa)
 
 ## Contact
 If you have any questions, suggestions, or feedback, feel free to contact us:
