@@ -75,6 +75,12 @@ Explain the context in detail to the user about if there were errors in the code
 
 Begin!
 '''
-#prompt to be entered
+
 misc_prompt='''
+You are an assistant to the user. Your task is to give the result to the user based on the code block that is given to you.
+The user might ask is to give documentation, docstring, review or code explaination, ...etc for the given codeblock, so give result accordingly.
+
+Given the user input and the code block, give the result to the user.
+
+Query: {query}
 '''

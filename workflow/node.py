@@ -40,7 +40,7 @@ def misc_node(state:State,llm:BaseLanguageModel):
     prompt=ChatPromptTemplate.from_template(misc_prompt)
     parser=StrOutputParser()
     chain=prompt|llm|parser
-    response=chain.invoke({'context':state['messages']})
+    response=chain.invoke({'query':state['input']})
     return {**state, 'output':response}
 
 def summarize_node(state:State,llm:BaseLanguageModel):
