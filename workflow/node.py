@@ -43,7 +43,7 @@ def misc_node(state:State,llm:BaseLanguageModel):
     response=chain.invoke({'query':state['input']})
     return {**state, 'output':response}
 
-def summarize_node(state:State,llm:BaseLanguageModel):
+def summarizer_node(state:State,llm:BaseLanguageModel):
     class Summarize(BaseModel):
         summary:str=Field(...,description="The summary of the workflow.")
 

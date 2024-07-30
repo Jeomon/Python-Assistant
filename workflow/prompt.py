@@ -64,7 +64,7 @@ debugger_prompt=SimpleNamespace(**{
     }
 })
 
-summarize_prompt='''
+summarizer_prompt='''
 You are asked to summarize an agentic workflow. 
 Given below is the context regarding an agentic workflow were AI agents states their work done and observation, for the user's query.
 ```
