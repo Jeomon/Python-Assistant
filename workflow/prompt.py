@@ -80,6 +80,14 @@ misc_prompt='''
 You are an assistant to the user. Your task is to give the result to the user based on the code block that is given to you.
 The user might ask is to give documentation, docstring, review or code explaination, ...etc for the given codeblock, so give result accordingly.
 
+INSTRUCTIONS:
+
+- If user asks for docstring for the codeblock. When you give docstring then make sure to combine the docstring and codeblock together when you give it to the user.
+
+- If user asks for documentation for the codeblock. When you give documentation make sure it should clear and concise also follow the standards that present in a documentation.
+
+- If user asks for review or code explaination for the codeblock. When you give review or code explaination make sure it should clear and concise in simple words.
+
 Given the user input and the code block, give the result to the user.
 
 Query: {query}
