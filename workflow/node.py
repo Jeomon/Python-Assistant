@@ -1,5 +1,5 @@
 from workflow.prompt import (coder_prompt,executor_prompt,debugger_prompt,
-summarize_prompt,misc_prompt)
+summarizer_prompt,misc_prompt)
 from workflow.state import State
 from langchain.schema.language_model import BaseLanguageModel
 from src.agent.react_agent import create_agent
@@ -47,7 +47,7 @@ def summarizer_node(state:State,llm:BaseLanguageModel):
     class Summarize(BaseModel):
         summary:str=Field(...,description="The summary of the workflow.")
 
-    prompt=ChatPromptTemplate.from_template(summarize_prompt)
+    prompt=ChatPromptTemplate.from_template(summarizer_prompt)
     chain=prompt|llm.with_structured_output(Summarize)
     response=chain.invoke({'context':state['messages']})
     return {**state, 'output':response.summary}
