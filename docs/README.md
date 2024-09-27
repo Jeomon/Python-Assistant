@@ -1,8 +1,9 @@
 # Python AI Assistant
 
-This a Python AI Assistant made by using langgraph and langchain. The assistant is capable of handling programming tasks in python. Here we use LLM as a router to route the user query to the appropirate agents that were mentioned in graph. Currently this workflow can write script files and fix errors in an existing script file also can give code review and documentation for the script. 
-## Graph
-!['Graph'](graph.svg)
+This a Python AI Assistant made by using langgraph and langchain. The assistant is capable of handling programming tasks in python. Here we use LLM as a router to route the user query to the appropirate agents that were mentioned in graph. Currently this workflow can write script files and fix errors in an existing script file also can give code review and documentation for the script.
+
+## Architecture Overview
+![Image of the Workflow](diagram.svg)
 
 ## Install Dependencies
 Make sure you have Python installed. Then, install the required packages using `pip`:
